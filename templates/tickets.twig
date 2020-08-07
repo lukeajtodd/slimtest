@@ -1,0 +1,25 @@
+<h1>All Tickets</h1>
+
+<p><a href="/ticket/new">Add new ticket</a></p>
+
+<table class="pure-table">
+    <tr>
+        <th>Title</th>
+        <th>Component</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+
+{% for ticket in tickets %}
+
+    <tr>
+        <td>{{ ticket.title  }}</td>
+        <td>{{ ticket.component  }}</td>
+        <td>{{ ticket.shortDescription  }} ...</td>
+        <td>
+            <a href="{{ router.pathFor('ticket-detail', {'id': ticket.id}) }}">view</a>
+        </td>
+    </tr>
+
+{% endfor %}
+</table>

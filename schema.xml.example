@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="DB_NAME" defaultIdMethod="native">
+  <table name="ticket" phpName="Ticket">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+    <column name="title" type="varchar" size="255" required="true" />
+    <column name="component" type="varchar" size="255" required="true"/>
+    <column name="short_description" type="varchar" size="255" required="true"/>
+  </table>
+</database>

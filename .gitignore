@@ -1,0 +1,13 @@
+vendor/*
+cache/*
+
+generated-conf/*
+generated-sql/*
+
+propel.json
+propel.json.dist
+composer.phar
+schema.xml
+propel
+
+.php-version
