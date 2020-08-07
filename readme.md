@@ -15,3 +15,12 @@ If you change the schema and need to regenerate the sql and models run:
 - `./propel sql:build`
 - `./propel sql:insert`
 - `./propel model:build`
+
+# Todo
+
+- Comments for tickets
+- Tickets should have tags for grouping and filtering
+- Filtering added to endpoints
+- Security around API (Bearer)
+- OpenAPI docs
+- Request body checks & further validation
