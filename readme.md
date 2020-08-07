@@ -6,13 +6,12 @@
 
 # Setup
 
-1. Install via composer (`composer install`)
-2. Run `./vendor/bin/propel init` from the `root`
-3. Configure your database (I have included an example schema for the application `schema.xml.example`)
-4. After the init command succeeds and you have configured your schema.xml run:
+1. Install via composer (`composer install`).
+2. Run `./vendor/bin/propel init` from the `root` and configure your DB and configs.
+3. Run your PHP server however you wish. (e.g. in the public dir, run `php -S localhost:8080`).
+
+If you change the schema and need to regenerate the sql and models run:
 
 - `./propel sql:build`
 - `./propel sql:insert`
 - `./propel model:build`
-
-5. Run your PHP server however you wish. (e.g. in the public dir, run `php -S localhost:8080`)
